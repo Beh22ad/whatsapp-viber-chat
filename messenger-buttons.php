@@ -10,7 +10,7 @@ function add_messenger_buttons() {
     // Device visibility settings (1 = visible, 0 = hidden)
     $whatsapp_desktop = 1; // Show WhatsApp on desktop
     $whatsapp_mobile = 1;  // Show WhatsApp on mobile
-    $viber_desktop = 0;   // Show Viber on desktop
+    $viber_desktop = 1;   // Show Viber on desktop
     $viber_mobile = 1;    // Show Viber on mobile
     
     // Determine if current device is mobile
@@ -78,8 +78,8 @@ function add_messenger_buttons() {
         
         .whatsapp-button svg {
             fill: #2CB742;
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
         }
         
         .viber-button svg {
@@ -105,8 +105,8 @@ function add_messenger_buttons() {
             }
             
             .whatsapp-button svg {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
             }
             
             .viber-button svg {
@@ -134,15 +134,7 @@ function add_messenger_buttons() {
         <!-- WhatsApp Button (Now at bottom) -->
         <a href="https://wa.me/<?php echo esc_attr($whatsapp_number); ?>" target="_blank" class="messenger-button whatsapp-button" rel="noopener noreferrer">
             <span class="tooltip">WhatsApp</span>
-            <svg viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,58l4.988-14.963C2.457,38.78,1,33.812,1,28.5C1,12.76,13.76,0,29.5,0S58,12.76,58,28.5
-                    S45.24,57,29.5,57c-4.789,0-9.299-1.187-13.26-3.273L0,58z"/>
-                <path d="M47.683,37.985c-1.316-2.487-6.169-5.331-6.169-5.331c-1.098-0.626-2.423-0.696-3.049,0.42
-                    c0,0-1.577,1.891-1.978,2.163c-1.832,1.241-3.529,1.193-5.242-0.52l-3.981-3.981l-3.981-3.981c-1.713-1.713-1.761-3.41-0.52-5.242
-                    c0.272-0.401,2.163-1.978,2.163-1.978c1.116-0.627,1.046-1.951,0.42-3.049c0,0-2.844-4.853-5.331-6.169
-                    c-1.058-0.56-2.357-0.364-3.203,0.482l-1.758,1.758c-5.577,5.577-2.831,11.873,2.746,17.45l5.097,5.097l5.097,5.097
-                    c5.577,5.577,11.873,8.323,17.45,2.746l1.758-1.758C48.048,40.341,48.243,39.042,47.683,37.985z" fill="white"/>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none" viewBox="0 0 32 32"><path fill="#BFC8D0" fill-rule="evenodd" d="M16 31c7.732 0 14-6.268 14-14S23.732 3 16 3 2 9.268 2 17c0 2.51.661 4.867 1.818 6.905L2 31l7.315-1.696A13.938 13.938 0 0 0 16 31Zm0-2.154c6.543 0 11.846-5.303 11.846-11.846 0-6.542-5.303-11.846-11.846-11.846C9.458 5.154 4.154 10.458 4.154 17c0 2.526.79 4.867 2.138 6.79L5.23 27.77l4.049-1.013a11.791 11.791 0 0 0 6.72 2.09Z" clip-rule="evenodd"/><path fill="url(#a)" d="M28 16c0 6.627-5.373 12-12 12-2.528 0-4.873-.782-6.807-2.116L5.09 26.909l1.075-4.03A11.945 11.945 0 0 1 4 16C4 9.373 9.373 4 16 4s12 5.373 12 12Z"/><path fill="#fff" fill-rule="evenodd" d="M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16c0 2.51.661 4.867 1.818 6.905L2 30l7.315-1.696A13.938 13.938 0 0 0 16 30Zm0-2.154c6.543 0 11.846-5.303 11.846-11.846 0-6.542-5.303-11.846-11.846-11.846C9.458 4.154 4.154 9.458 4.154 16c0 2.526.79 4.867 2.138 6.79L5.23 26.77l4.049-1.013a11.791 11.791 0 0 0 6.72 2.09Z" clip-rule="evenodd"/><path fill="#fff" d="M12.5 9.5c-.333-.669-.844-.61-1.36-.61-.921 0-2.359 1.105-2.359 3.16 0 1.684.742 3.528 3.243 6.286 2.414 2.662 5.585 4.039 8.218 3.992 2.633-.047 3.175-2.313 3.175-3.078 0-.339-.21-.508-.356-.554-.897-.43-2.552-1.233-2.928-1.384-.377-.15-.573.054-.695.165-.342.325-1.019 1.284-1.25 1.5-.232.215-.578.106-.721.024-.53-.212-1.964-.85-3.107-1.958-1.415-1.371-1.498-1.843-1.764-2.263-.213-.336-.057-.542.021-.632.305-.351.726-.894.914-1.164.189-.27.04-.679-.05-.934-.387-1.097-.715-2.015-.981-2.55Z"/><defs><linearGradient id="a" x1="26.5" x2="4" y1="7" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#5BD066"/><stop offset="1" stop-color="#27B43E"/></linearGradient></defs></svg>
         </a>
         <?php endif; ?>
     </div>
